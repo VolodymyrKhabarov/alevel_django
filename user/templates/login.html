@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="#" method="post">
+    <div class="wrapper">
+
+        <div class="block1">
+            <h1>Увійти</h1>
+        </div>
+
+        <div class="block2">
+            <div class="label">
+                <label for="email">Email:</label>
+            </div>
+            <div class="label">
+                <label for="pwd">Пароль:</label>
+            </div>
+        </div>
+
+        <div class="block3">
+
+            <div class="input">
+                <input placeholder="Email" type="email" id="email" name="email"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть пароль" type="password" id="pwd" name="pwd"><br><br>
+            </div>
+
+            <div class="buttons">
+                <div>
+                    <button type="submit" class="registerbtn">Увійти</button>
+                </div>
+
+                <div>
+                    <button type="reset" class="resetbtn">Очистити форму</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
