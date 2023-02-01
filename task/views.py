@@ -1,14 +1,6 @@
 from django.http import HttpRequest, Http404
 from django.shortcuts import render
 
-# Create your views here.
-# tasks = [
-#     {"id": 1, "title": "Task #1", "completed": False},
-#     {"id": 2, "title": "Task #2", "completed": True},
-#     {"id": 3, "title": "Task #3", "completed": False},
-#     {"id": 4, "title": "Task #4", "completed": True},
-#     {"id": 5, "title": "Task #5", "completed": False}
-# ]
 
 tasks = [
     {'id': 1, 'title': 'Task #1', 'description': '10 km training run', 'created': '2022-01-28 12:00',
