@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="#" method="post">
+    <div class="wrapper">
+
+        <div class="block1">
+            <h1>Реєстрація</h1>
+        </div>
+
+        <div class="block2">
+            <div class="label">
+                <label for="lname">Прізвище:</label>
+            </div>
+            <div class="label">
+                <label for="fname">Ім'я:</label>
+            </div>
+            <div class="label">
+                <label for="patronymic">По батькові:</label>
+            </div>
+            <div class="label">
+                <label for="dateofbirth">Дата народження:</label>
+            </div>
+            <div class="label">
+                <label for="email">Email:</label>
+            </div>
+            <div class="label">
+                <label for="pwd">Пароль:</label>
+            </div>
+            <div class="label">
+                <label for="confirm_pwd">Підтвердіть пароль:</label>
+            </div>
+            <div class="label">
+                <label for="phone">Телефон:</label>
+            </div>
+            <div class="label textarea">
+                <label for="address">Адреса:</label>
+            </div>
+            <div class="label state_label">
+                <label for="gender">Стать:</label>
+            </div>
+        </div>
+
+        <div class="block3">
+            <div class="input">
+                <input placeholder="Введіть прізвище" type="text" id="lname" name="lname"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть ім'я" type="text" id="fname" name="fname"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть по батькові" type="text" id="patronymic" name="patronymic"><br><br>
+            </div>
+
+            <div class="input birth">
+                <input list="day" placeholder="Дата народження" type="date" id="dateofbirth">
+            </div>
+
+            <div class="input">
+                <input placeholder="Email" type="email" id="email" name="email"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть пароль" type="password" id="pwd" name="pwd"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть пароль ще раз" type="password" id="confirm_pwd"
+                       name="confirm_pwd"><br><br>
+            </div>
+
+            <div class="input">
+                <input placeholder="Введіть номер телефону" type="tel" id="phone" name="phone"><br><br>
+            </div>
+
+            <div class="input textarea">
+                    <textarea placeholder="Введіть адресу" id="address" name="address" rows="4"
+                              cols="50"></textarea><br><br>
+            </div>
+
+            <div class="state">
+
+                <div>
+                    <input type="radio" id="gender" name="sex" value="male">
+                </div>
+                <div class="male">
+                    <p>Чоловіча</p>
+                </div>
+
+
+                <div>
+                    <input type="radio" id="female" name="sex" value="female">
+                </div>
+                <div class="female">
+                    <p>Жіноча</p>
+                </div>
+
+            </div>
+
+            <div class="conditions">
+                <div>
+                    <input type="checkbox" id="conditions" name="conditions" value="condition">
+                </div>
+                <div>
+                    <label for="conditions"> Я згоден з <a href="">умовами</a>.</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div>
+                    <button type="submit" class="registerbtn">Реєстрація</button>
+                </div>
+
+                <div>
+                    <button type="reset" class="resetbtn">Очистити форму</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

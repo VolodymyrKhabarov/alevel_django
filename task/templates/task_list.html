@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+    {% for task in task_list%}
+    <li id="task-{{task.id}}"><a href="{% url 'task-detail' task.id %}"> {{ task.title }}</a></li>
+    <label for="completed"></label>
+    {% if task.completed %}
+    <input id="completed" type="checkbox" checked value="Completed">
+    {% else %}
+    <input id="completed" type="checkbox" value="Completed">
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

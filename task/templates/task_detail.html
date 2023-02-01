@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ task.title }}</h1>
+<p>Id: {{ task.id }}</p>
+<p>Description: {{ task.description }}</p>
+<p>Created: {{ task.created }}</p>
+<p>Updated: {{ task.updated }}</p>
+<label for="completed">Completed</label>
+{% if task.completed %}
+<input id="completed" type="checkbox" checked value="Completed">
+{% else %}
+<input id="completed" type="checkbox" value="Completed">
+{% endif %}
+{% endblock %}
